@@ -1,0 +1,14 @@
+#main{
+  background-color: whitesmoke;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+
+}
+
+h1{
+    font-family: 'Hahmlet', serif;
+}
+p{
+  font-size: 18px;
+}
