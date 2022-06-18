@@ -1,18 +1,3 @@
-/*
- mouse, 0
- cow, 1
- tiger, 2
- rabbit, 3
- dragon, 4
- snake, 5
- horse, 6
- sheep, 7
- monkey, 8
- chick, 9
- dog, 10
- pig, 11*/
-
-
 const qnaList = [
   {
     q: '당신은 사립래일고교 1학년입니다. 오늘은 입학식! 당신에게 어떤일이 일어날까요? ',
