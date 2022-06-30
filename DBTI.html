@@ -41,38 +41,38 @@
   </head>
   <body>
     <div class="container">
-      <!--메인 페이지-->
-      <section id="main" class="mx-auto my-5 py-5 px-3">
-        <div class="mx-auto">
-          <img src="./img/head_logo.png" alt="headImage" class="img-fluid" />
-        </div>
 
+      <!--메인 페이지-->
+      <section id="main" class="mainImage mx-auto my-5 py-5 px-3">
+        <div class="naviBar mt-10">
+          <img src="./img/head_logo.png" alt="headImage" class="img-fluid" />
+            </div>
         <div class="mainText px-3">
           <h1>애니<br>
         캐릭터가<br>
         되어버린<br>
         나...</h1>
         </div>
-        <div class="mx-auto">
-          <img src="./img/main.png" alt="mainImage" class="img-fluid" />
-        </div>
 
-        <button type="button" class="startButton mx-auto mt-3 col-lg-6 col-md-8 col-sm-10 col-12"  onclick="js:begin()">
+
+        <button type="button" class="startButton mx-auto col-lg-6 col-md-8 col-sm-10 col-12"  onclick="js:begin()">
           와쿠와쿠....! 시작하기
         </button>
         <button type="button" class="mainShare mx-auto mt-3 col-lg-6 col-md-8 col-sm-10 col-12"  onclick="js:begin()">
           다른 오타쿠에게 공유하기
         </button>
       </section>
+
       <!--질문페이지-->
-      <section id="qna">
-        <div class="headLogo mx-auto">
-          <img src="./img/head_logo.png" alt="headImage" class="img-fluid" />
-        </div>
-        <button type="button" class="backButton" onclick="js:setShare()"><img src="img/backbutton.png">
-          </button>
-          <button type="button" class="homeButton" onclick="location.href='/'"><img src="img/home.png">
+      <section id="qna" class="mx-auto my-5 py-5 px-3">
+        <div class="naviBar mx-auto">
+          <button type="button" class="backButton" onclick="js:setShare()"><img src="img/backbutton.png">
             </button>
+          <img src="./img/head_logo.png" alt="headImage" class="img-fluid" />
+
+          <button type="button" class="homeButton" onclick="location.href='file:///C:/Users/EUNJUNG/Documents/DBTI/DBTI.html'"><img src="img/refresh.png">
+            </button>
+            </div>
 
         <div class="qBox my-5 py-3 mx-auto"></div>
         <div class="answerBox"></div>
@@ -80,10 +80,17 @@
           <div class="statusBar"></div>
         </div>
       </section>
+
+      <!--결과페이지-->
       <section id="result" class="mx-auto my-5 py-5 px-3">
-        <div class="mx-auto">
+        <div class="naviBar mx-auto">
+          <button type="button" class="backButton" onclick="js:setShare()"><img src="img/backbutton.png">
+            </button>
           <img src="./img/head_logo.png" alt="headImage" class="img-fluid" />
-        </div>
+
+          <button type="button" class="homeButton" onclick="location.href='/'"><img src="img/refresh.png">
+            </button>
+            </div>
         <h1>당신은 말이야...</h1>
         <div class="resultName"></div>
         <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"></div>

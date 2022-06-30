@@ -1,7 +1,8 @@
 #result {
   display: none;
   background-color: white;
-  width: 80%;
+  width: 100%;
+  max-width:500px;
   text-align: center;
 }
 
@@ -9,6 +10,25 @@
   background-color: white;
   width: 100%;
   text-align: center;
+}
+
+.naviBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.backButton{
+  border:0;
+  outline: 0;
+  background-color: rgba(0,0,0,0);
+}
+
+.homeButton{
+  border:0;
+  outline: 0;
+  background-color: rgba(0,0,0,0);
 }
 
 .resultDesc {
