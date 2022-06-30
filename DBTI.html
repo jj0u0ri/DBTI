@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="img/favicon.ico"/>
 
-    <title>덕비티아이</title>
+    <title>김래일의 애니 캐릭터 테스트</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -41,36 +41,66 @@
   </head>
   <body>
     <div class="container">
+      <!--메인 페이지-->
       <section id="main" class="mx-auto my-5 py-5 px-3">
-        <h1>MBTI</h1>
-        <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+        <div class="mx-auto">
+          <img src="./img/head_logo.png" alt="headImage" class="img-fluid" />
+        </div>
+
+        <div class="mainText px-3">
+          <h1>애니<br>
+        캐릭터가<br>
+        되어버린<br>
+        나...</h1>
+        </div>
+        <div class="mx-auto">
           <img src="./img/main.png" alt="mainImage" class="img-fluid" />
         </div>
-        <p class="pt-3">
-          애니 속 세상에 떨어진 당신!<br>
-          당신은 어떤 스타일의 캐릭터일까? <br>
-          평소 자신의 모습과 가장 가까운 대답을 선택해 주세요~<br>
-          아래 버튼을 눌러 시작합니다
-        </p>
-        <button type="button" class="btn btn-outline-danger mt-3" onclick="js:begin()">
-          시작하기
+
+        <button type="button" class="startButton mx-auto mt-3 col-lg-6 col-md-8 col-sm-10 col-12"  onclick="js:begin()">
+          와쿠와쿠....! 시작하기
+        </button>
+        <button type="button" class="mainShare mx-auto mt-3 col-lg-6 col-md-8 col-sm-10 col-12"  onclick="js:begin()">
+          다른 오타쿠에게 공유하기
         </button>
       </section>
+      <!--질문페이지-->
       <section id="qna">
+        <div class="headLogo mx-auto">
+          <img src="./img/head_logo.png" alt="headImage" class="img-fluid" />
+        </div>
+        <button type="button" class="backButton" onclick="js:setShare()"><img src="img/backbutton.png">
+          </button>
+          <button type="button" class="homeButton" onclick="location.href='/'"><img src="img/home.png">
+            </button>
+
+        <div class="qBox my-5 py-3 mx-auto"></div>
+        <div class="answerBox"></div>
         <div class="status mx-auto mt-5">
           <div class="statusBar"></div>
         </div>
-        <div class="qBox my-5 py-3 mx-auto"></div>
-        <div class="answerBox"></div>
       </section>
       <section id="result" class="mx-auto my-5 py-5 px-3">
-        <h1>결과는?</h1>
+        <div class="mx-auto">
+          <img src="./img/head_logo.png" alt="headImage" class="img-fluid" />
+        </div>
+        <h1>당신은 말이야...</h1>
         <div class="resultName"></div>
         <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"></div>
         <div class="resultDesc"></div>
-        <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">
-          공유하기
+        <button type="button" class="twitter mt-3 py-2 px-3" onclick="js:setShare()">
+          트위터에 공유하기
         </button>
+        <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">
+          카카오톡에 공유하기
+        </button>
+        <p>우주대인기 자칭ENTP스트리머 김래일</p>
+        <button type="button" class="youtube mt-3 py-2 px-3" onclick="window.open('https://www.youtube.com/c/%EA%B9%80%EB%9E%98%EC%9D%BC')"><img src="img/youtube.png">
+        </button>
+        <button type="button" class="twitch mt-3 py-2 px-3" onclick="window.open('https://www.twitch.tv/rail_kim')"><img src="img/twitch.png">
+        </button>
+
+
       </section>
     </div>
     <script src="./js/data.js" charset="utf-8"></script>

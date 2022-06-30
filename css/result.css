@@ -1,16 +1,14 @@
 #result {
   display: none;
-  background-color: whitesmoke;
+  background-color: white;
   width: 80%;
   text-align: center;
-  border-radius: 20px;
 }
 
 #shareResult {
-  background-color: whitesmoke;
-  width: 80%;
+  background-color: white;
+  width: 100%;
   text-align: center;
-  border-radius: 20px;
 }
 
 .resultDesc {
@@ -21,12 +19,27 @@
   font-size: 20px;
 }
 
+.twitter {
+  color: white;
+  background-color: #1DA1F2;
+  font-size: 20px;
+  width : 100%;
+  height: 60px;
+  line-height: normal;
+}
+
+.twitter:hover, .twitter:focus {
+  background-color: whitesmoke;
+  color: #1DA1F2;
+}
+
 .kakao {
   color: white;
   background-color: #FEE500;
   font-size: 20px;
-  border: 0px;
-  border-radius: 20px;
+  width : 100%;
+  height: 60px;
+  line-height: normal;
 }
 
 .kakao:hover, .kakao:focus {
@@ -45,4 +58,12 @@
 .kakao:hover, .kakao:focus {
   background-color: whitesmoke;
   color: pink;
+}
+
+.youtube{
+  border: 0;
+}
+
+.twitch{
+  border: 0;
 }

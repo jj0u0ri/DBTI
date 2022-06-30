@@ -1,6 +1,19 @@
 #qna {
   display: none;
 }
+.headLogo {
+  position: relative;
+  text-align: center;
+}
+
+
+.backButton {
+  position: absolute;
+}
+
+.homeButton {
+  position: absolute;
+}
 
 .qBox {
   background-color: whitesmoke;
@@ -12,11 +25,11 @@
 
 .answerList {
   background-color: whitesmoke;
-  border-radius: 20px;
   display: block;
   width: 80%;
   border: 0px;
-  font-size: 20px;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .answerList:hover, .answerList:focus {
