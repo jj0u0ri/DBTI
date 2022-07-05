@@ -43,7 +43,7 @@
     <div class="container">
 
       <!--메인 페이지-->
-      <section id="main" class="mainImage mx-auto my-5 py-5 px-3">
+      <section id="main" class="mainImage mx-auto my-5">
         <div class="naviBar mt-10">
           <img src="./img/head_logo.png" alt="headImage" class="img-fluid" />
             </div>
@@ -64,33 +64,27 @@
       </section>
 
       <!--질문페이지-->
-      <section id="qna" class="mx-auto my-5 py-5 px-3">
+      <section id="qna" class="mx-auto my-5">
         <div class="naviBar mx-auto">
-          <button type="button" class="backButton" onclick="js:setShare()"><img src="img/backbutton.png">
+          <button type="button" class="backButton" onclick="js:backPage()"><img src="img/backbutton.png">
             </button>
           <img src="./img/head_logo.png" alt="headImage" class="img-fluid" />
 
-          <button type="button" class="homeButton" onclick="location.href='file:///C:/Users/EUNJUNG/Documents/DBTI/DBTI.html'"><img src="img/refresh.png">
+          <button type="button" class="homeButton" onclick="location.href=''"><!--처음홈페이지주소--><img src="img/refresh.png">
             </button>
             </div>
 
-        <div class="qBox my-5 py-3 mx-auto"></div>
+        <div class="qBox my-2 py-3 mx-auto "></div>
         <div class="answerBox"></div>
-        <div class="status mx-auto mt-5">
+        <div class="status mx-auto mt-1">
           <div class="statusBar"></div>
         </div>
+        <p id="nowPage"></p>
+
       </section>
 
       <!--결과페이지-->
-      <section id="result" class="mx-auto my-5 py-5 px-3">
-        <div class="naviBar mx-auto">
-          <button type="button" class="backButton" onclick="js:setShare()"><img src="img/backbutton.png">
-            </button>
-          <img src="./img/head_logo.png" alt="headImage" class="img-fluid" />
-
-          <button type="button" class="homeButton" onclick="location.href='/'"><img src="img/refresh.png">
-            </button>
-            </div>
+      <section id="result" class="mx-auto my-5">
         <h1>당신은 말이야...</h1>
         <div class="resultName"></div>
         <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto"></div>
@@ -101,7 +95,10 @@
         <button type="button" class="kakao mt-3 py-2 px-3" onclick="js:setShare()">
           카카오톡에 공유하기
         </button>
-        <p>우주대인기 자칭ENTP스트리머 김래일</p>
+        <button type="button" class="home mt-3 py-2 px-3" onclick="location.href=''"><!--처음홈페이지주소-->
+          처음으로...
+        </button>
+        <p class="mx-auto mt-5">우주대인기 자칭ENTP스트리머 김래일</p>
         <button type="button" class="youtube mt-3 py-2 px-3" onclick="window.open('https://www.youtube.com/c/%EA%B9%80%EB%9E%98%EC%9D%BC')"><img src="img/youtube.png">
         </button>
         <button type="button" class="twitch mt-3 py-2 px-3" onclick="window.open('https://www.twitch.tv/rail_kim')"><img src="img/twitch.png">

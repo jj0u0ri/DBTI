@@ -1,7 +1,7 @@
 #qna {
   display: none;
   width: 100%;
-  max-width:500px;
+  max-width: 500px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -9,34 +9,36 @@
 
 .naviBar {
   display: flex;
-  justify-content: space-between;
+  position: relative;
 }
 
-
-
-.backButton{
-  border:0;
+.backButton {
+  border: 0;
   outline: 0;
-  background-color: rgba(0,0,0,0);
+  background-color: white;
+  position: absolute;
+  padding-top: 25px;
 }
 
-.homeButton{
-  border:0;
+.homeButton {
+  border: 0;
   outline: 0;
-  background-color: rgba(0,0,0,0);
+  background-color: white;
+  position: absolute;
+  padding-top: 25px;
+  padding-left: 450px;
 }
-
 
 .qBox {
-  background-color: whitesmoke;
-  text-align: center;
-  border-radius: 20px;
+  background-color: white;
+  text-align: left;
   font-size: 24px;
   width: 100%;
+  padding-left: 10px;
 }
 
 .answerList {
-  background-color: whitesmoke;
+  background-color: white;
   display: block;
   width: 100%;
   border: 0px;
@@ -46,22 +48,31 @@
 
 .answerList:hover, .answerList:focus {
   background-color: pink;
-  color: whitesmoke;
+  color: white;
 }
 
 .status {
-  height: 20px;
+  height: 15px;
   width: 80%;
   background-color: white;
+  float: left;
 }
 
 .statusBar {
   height: 100%;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+2,828c95+100 */
-background: rgb(181,189,200); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 2%, rgba(130,140,149,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 2%,rgba(130,140,149,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 2%,rgba(130,140,149,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#828c95',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: rgb(181, 189, 200);
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(181, 189, 200, 1) 0%, rgba(130, 140, 149, 1) 2%, rgba(130, 140, 149, 1) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(181, 189, 200, 1) 0%, rgba(130, 140, 149, 1) 2%, rgba(130, 140, 149, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(181, 189, 200, 1) 0%, rgba(130, 140, 149, 1) 2%, rgba(130, 140, 149, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b5bdc8', endColorstr='#828c95', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
 
+.pageNumber {
+  float: right;
 }

@@ -67,7 +67,9 @@ function addAnswer(answerText, qIdx, idx){
       goNext(++qIdx);
     },450)
   }, false);
+
 }
+
 function goNext(qIdx){
   if(qIdx === endPoint){
     goResult();
@@ -80,7 +82,13 @@ function goNext(qIdx){
   }
   let status = document.querySelector('.statusBar')
   status.style.width = (100/endPoint) * (qIdx+1) + '%';
+
+  var pageNumber = document.getElementById("nowPage");
+  pageNumber.innerHTML = (qIdx+1) + "/12쪽";
 }
+
+
+
 function begin(){
   main.style.WebkitAnimation = "fadeOut 1s";
   main.style.animation = "fadeOut 1s";

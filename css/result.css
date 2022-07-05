@@ -67,17 +67,18 @@
   color: #FEE500;
 }
 
-.goHome {
-  color: white;
-  background-color: pink;
+.home {
+  color: black;
+  background-color: white;
   font-size: 20px;
-  border: 0px;
-  border-radius: 20px;
+  width : 100%;
+  height: 60px;
+  line-height: normal;
 }
 
-.kakao:hover, .kakao:focus {
-  background-color: whitesmoke;
-  color: pink;
+.home:hover, .home:focus {
+  background-color: grey;
+  color: white;
 }
 
 .youtube{
